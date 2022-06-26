@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.LoginFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/AL_Image"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_margin="30dp"
+        tools:src="@drawable/city" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/AL_TextLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/AL_Image"
+        app:layout_constraintStart_toStartOf="@+id/AL_Image" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/AL_Username"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Login"
+        app:layout_constraintEnd_toEndOf="@+id/AL_Image"
+        app:layout_constraintTop_toBottomOf="@id/AL_TextLogin"
+        app:layout_constraintStart_toStartOf="@+id/AL_Image"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/AL_Username_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="@+id/AL_Image" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/AL_password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        app:endIconDrawable="@drawable/baseline_lock_black_24dp"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="@id/AL_Username"
+        app:layout_constraintStart_toStartOf="@id/AL_Username"
+        app:layout_constraintTop_toBottomOf="@id/AL_Username">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/AL_password_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/AL_ButtonAccess"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:enabled="false"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/AL_Username"
+        app:layout_constraintStart_toStartOf="@id/AL_Username"
+        app:layout_constraintTop_toBottomOf="@+id/AL_password" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/AL_Username"
+        app:layout_constraintEnd_toEndOf="@id/AL_Username"
+        app:layout_constraintTop_toBottomOf="@+id/AL_ButtonAccess"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/AL_txt_forgot"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Forgot password"
+            app:layout_constraintWidth_percent="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/AL_txt_Get"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Get new"
+            app:layout_constraintWidth_percent="0.5"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/AL_txt_forgot"
+            />
+
+        <TextView
+            android:id="@+id/AL_txt_Account"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Do you have an account?"
+            app:layout_constraintWidth_percent="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:id="@+id/AL_txt_Create"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Create new"
+            app:layout_constraintWidth_percent="0.5"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/AL_txt_Account"
+            app:layout_constraintTop_toTopOf="@+id/AL_txt_Account"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

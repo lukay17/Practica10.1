@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Practica10.1</string>
+    <string name="FOP1_title">Tu App de Viajes</string>
+    <string name="FOP2_title">Find Your Match!</string>
+    <string name="FOP3_title">Find the Perfect Roommate</string>
+    <string name="FOP1_subtitle">Hola, estamos buscando a millones de ustedes con inquietudes y ganas viajar. Si eres tu? No lo dudes accede a nuestra app y descubriras miles de destinos y facilidades para alquilar coches, ver el tiempo...</string>
+    <string name="FOP2_subtitle">We\'ve helped millions across the nation find their perfect match ... and you\'re next!</string>
+    <string name="FOP3_subtitle">We\'ve helped millions across the nation find their perfect match ... and you\'re next!</string>
+    <string name="home_title">Upcomming meetups</string>
+    <string name="title1">USA, Los Angeles - 2 Weeks</string>
+    <string name="subtitle1">City of Los Angeles</string>
+    <string name="title2">Madives - 3 weeks</string>
+    <string name="subtitle2">Beach vacation</string>
+    <string name="option1">0-5</string>
+    <string name="option2">6-11</string>
+    <string name="option3">12-17</string>
+    <string name="option4">18-99</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="price_car">$%.2f/day</string>
+
+    <string name="fragLogin_title">Fragment Login</string>
+    <string name="fragRegister_title">Fragment Register</string>
+</resources>
